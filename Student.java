@@ -1,32 +1,23 @@
-package Today;
+package Oops;
+
+class info{
+	
+	String name;
+	int age;
+	
+	public void Sinfo() {
+		System.out.println(this.name);
+		System.out.println(this.age);
+	}
+}
 
 public class Student {
-  
-	// Default 
-		Student(){
-			System.out.println(" This is Default ");
-		 }
-		
-	   // parameterized 
-		 int age;
-		 String name;
-		 
-		 Student( int a , String n){	 
-			 age = a;
-			 name = n;		 
-		   } 
-		 
-		 void show(){
-			 System.out.println(age+ " "+ name);}
-				 	 
-		 public static void main(String[] args) {
-			
-			 // this object foe default
-			 Student o = new Student(); 
-			 // this for parameterized
-			 Student ob = new Student( 22 , "Nikhil");
-			 ob.show(); 
-		 }
-	   }
-
-
+public static void main(String[] args) {
+	
+	info s1 = new info();
+	s1.name = "nikhil";
+	s1.age = 22;
+	
+	s1.Sinfo();
+}
+}
